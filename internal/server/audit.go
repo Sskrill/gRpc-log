@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	"github.com/Sskrill/gRpc-log.git/proto/audit"
+	"github.com/Sskrill/gRpc-log/proto/audit"
 )
 
 type AuditRepos interface {

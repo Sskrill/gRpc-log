@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/Sskrill/gRpc-log.git/internal/config"
+	"github.com/Sskrill/gRpc-log/internal/config"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

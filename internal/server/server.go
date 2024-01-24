@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/Sskrill/gRpc-log.git/proto/audit"
+	"github.com/Sskrill/gRpc-log/proto/audit"
 	"google.golang.org/grpc"
 )
 

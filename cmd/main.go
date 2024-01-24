@@ -5,9 +5,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/Sskrill/gRpc-log.git/internal/config"
-	"github.com/Sskrill/gRpc-log.git/internal/repository"
-	"github.com/Sskrill/gRpc-log.git/internal/server"
+	"github.com/Sskrill/gRpc-log/internal/config"
+	"github.com/Sskrill/gRpc-log/internal/repository"
+	"github.com/Sskrill/gRpc-log/internal/server"
 )
 
 func main() {
