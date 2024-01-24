@@ -1,4 +1,4 @@
-module github.com/Sskrill/gRpc-log.git
+module github.com/Sskrill/gRpc-log
 
 go 1.21.4
 
