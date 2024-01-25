@@ -23,12 +23,14 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	auditDB := repository.NewConnectAuditDB(db)
 	audit := server.NewAudit(auditDB)
 	srv := server.NewServer(audit)
+	log.Println("Server Started")
 	err = srv.ListenAndServe(cfg.Server.Port)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("Server Started")
+
 }

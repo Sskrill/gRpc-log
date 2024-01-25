@@ -11,7 +11,7 @@ import (
 func NewConnectMongo(cfg config.ConfigMongo, ctx context.Context) (*mongo.Database, error) {
 
 	opts := options.Client()
-	opts.SetAuth(options.Credential{Username: cfg.UserName, Password: cfg.Password})
+	opts.SetAuth(options.Credential{Username: cfg.UserName, Password: cfg.Password, AuthSource: "audit", AuthMechanism: "SCRAM-SHA-256"})
 	opts.ApplyURI(cfg.URI)
 	dbClient, err := mongo.Connect(ctx, opts)
 	if err != nil {
