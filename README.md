@@ -1,1 +1,1 @@
-gRPC server for logging.
+**gRPC server for logging.**
